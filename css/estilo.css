@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.mapa-pp, .aside .foto-pp, .contenedor-profesional .foto-profesional img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-arriba img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-abajo img, .tarjeta-contenedor .tarjeta-izquierda img, .start-pp img, .center-pp img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
+.mapa-pp, .flex-pp .foto-pp, .contenedor-profesional .foto-profesional img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-arriba img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-abajo img, .tarjeta-contenedor .tarjeta-izquierda img, .start-pp img, .center-pp img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .botonera-pp, .aside .flex-pp, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-pp, .center-pp {
+.footer-negro .flex-footer, .botonera-pp, .flex-pp, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-pp, .center-pp, .start-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -227,6 +227,10 @@ body main, body article {
   background-image: url("../assets/img/mardel-1.jpg");
 }
 
+.start-index {
+  align-items: start;
+}
+
 .center-pp {
   align-items: center;
   justify-content: space-evenly;
@@ -284,6 +288,9 @@ body main, body article {
   color: #3b70d8;
 }
 
+.flex-pp {
+  justify-content: center;
+}
 .botonera-pp {
   height: 21vh;
   align-items: center;

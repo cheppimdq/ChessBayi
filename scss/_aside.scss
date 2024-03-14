@@ -1,15 +1,16 @@
 
-.aside {
 
-    .foto-pp {
-        @extend %foto-pp;
-    }
+    
     
     .flex-pp {
         @extend %flex-pp;
+        justify-content: center;
+
+        .foto-pp {
+            @extend %foto-pp;
+        }
     }
 
-}
 
 
 .botonera-pp {

@@ -4,6 +4,11 @@
         img { @extend %foto-pp; }
 }
 
+.start-index {
+    @extend %flex-pp;
+    align-items: start;
+}
+
 .center-pp {
     @extend %flex-pp;
     align-items: center;
