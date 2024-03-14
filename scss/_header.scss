@@ -1,0 +1,92 @@
+.nav-negro {
+    h1 { font-size: inherit; }
+    i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
+}
+
+.altura-index { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
+
+.altura-seguros { height: calc(79vh - 56px); } // estas alturas con las del carousel item
+
+// HEADER DEL INDEX
+.carousel-item  {
+
+    img, video {
+        @extend %foto-pp;
+        height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
+    }
+
+    .carousel-caption {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h2 {
+            font-family: map-get($fuente-pp, h2-carousel);
+            color: map-get($color-pp, blanco);
+            font-size: 3rem;
+            font-weight: bolder;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            color: map-get($color-pp, blanco);
+            font-size: 1rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+
+// HEADERS DERECHO, CONTADURIA, SEGUROS y CONTACTO
+%parallax-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // ESTO SE REPITE HAY QUE RESUMIRLO
+    h2 {
+        font-family: map-get($fuente-pp, h2-carousel);
+        color: map-get($color-pp, blanco);
+        font-size: 3rem;
+        font-weight: bolder;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);;
+    }
+
+    p {
+        color: map-get($color-pp, blanco);
+        font-size: 1rem;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    }
+}
+
+// TODOS LOS PARALLAX
+.parallax-derecho {
+    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
+    @extend %parallax-pp;
+    @extend %parallax-header;
+    background-image: url("../assets/img/ley-1.jpg");
+}
+
+.parallax-contaduria {
+    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
+    background-image: url("../assets/img/dolar-1.jpg");
+    @extend %parallax-pp;
+    @extend %parallax-header;
+}
+
+.parallax-seguros {
+    width: 100%;
+    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
+    @extend %parallax-pp;
+    @extend %parallax-header;
+    background-image: url("../assets/img/trabajo-2.jpg");
+}
+
+.parallax-contacto {
+    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
+    @extend %parallax-pp;
+    @extend %parallax-header;
+    background-image: url("../assets/img/mardel-1.jpg");
+}

@@ -1,0 +1,81 @@
+// FLEXIBLES
+.columna-pp { // integrar hay que sacarlo pero ahora sirve para los articulos del footer index.html
+    @extend %columna-pp;
+        img { @extend %foto-pp; }
+}
+
+.center-pp {
+    @extend %flex-pp;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    gap: 1.5rem;
+    img { @extend %foto-pp; }
+}
+
+.start-pp {
+    @extend %flex-pp;
+    align-items: start;
+    justify-content: space-evenly;
+    align-content: space-around;
+    // overflow: hidden;
+    margin: .75rem;
+    padding: .75rem;
+    gap: 1.5rem;
+    img { @extend %foto-pp; }
+}
+
+// TARJETA BBVA
+.tarjeta-contenedor {
+    display: flex;
+    gap: 1rem; // Espacio entre los elementos
+    .tarjeta-izquierda {
+        img {
+            @extend %foto-pp;
+            max-height: calc(50% + 0.5rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
+        }
+    }
+    .tarjeta-derecha {
+        @extend %columna-pp;
+
+        gap: 1rem; // Espacio entre los elementos internos
+        .tarjeta-arriba, .tarjeta-abajo {
+            width: 100%;
+            height: calc(50% - .5rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
+            img { @extend %foto-pp; }
+        }
+    }
+    h5, p {
+        margin: .25rem;
+        padding: .25rem;
+    }
+}
+
+// DIV PERFIL PROFESIONAL - Puede ir en main como section o directamente como article
+.contenedor-profesional {
+    @extend %flex-pp;
+    justify-content: space-between; // Queda perfecto !!!
+    align-items: center;
+    overflow-x: hidden; // esto va aca por que es un contenedor de una animacion AOS
+
+    .foto-profesional {
+        position: relative;
+        @extend %flex-pp;
+        justify-content: center; // Queda perfecto !!!
+        align-items: center;
+
+        img { @extend %foto-pp; }
+        .link-blanco  {
+            position: absolute;
+            bottom: 0;
+            padding: 0.3rem;
+            background-color: rgba(map-get($color-pp, negro), 0.6);
+            @extend %flex-pp;
+            justify-content: center;
+            align-items: center;
+            i { color: map-get($color-pp, linkedin); }
+        }
+    }
+}

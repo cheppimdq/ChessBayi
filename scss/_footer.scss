@@ -1,0 +1,13 @@
+// ALTO FOOTER
+.footer-negro {
+    height: 42vh;
+    background-color: map-get($color-pp, negro); // ACA VA EL MISMO COLOR QUE EL FONDO NEGRO !!!
+    color: map-get($color-pp, negro-2); // ACA VA EL MISMO COLOR QUE EL LINK GRIS !!!
+    z-index: 1020;
+
+    .flex-footer {
+        @extend %flex-pp;
+        justify-content: center;
+        align-content: center;
+    }
+}

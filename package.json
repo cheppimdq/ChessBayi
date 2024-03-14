@@ -1,0 +1,25 @@
+{
+  "name": "sb-consultora",
+  "version": "1.0.0",
+  "description": "smart bros",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheppimdq/sb-consultora.git"
+  },
+  "keywords": [
+    "consultora"
+  ],
+  "author": "@cheppimdq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheppimdq/sb-consultora/issues"
+  },
+  "homepage": "https://github.com/cheppimdq/sb-consultora#readme",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}

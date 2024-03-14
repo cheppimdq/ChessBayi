@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    a { text-decoration: none; } // si se saca de aca, volver a meter en @mixin enlace-pp
+    main, article {
+        margin: .75rem;
+        padding: .75rem;
+    }
+    overflow-x: hidden;
+}

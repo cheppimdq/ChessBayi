@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> <!-- META MUY TRANQUILO DEBERIA TENER MAS POWER -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SB Consultora | Mar del Plata</title>
+        <meta name="description" content="DESCRIPCION DE LA CONSULTORA">
+        <meta name="keywords"  content="TAGS">
+        <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg sticky-top fondo-negro nav-negro"> <!-- EL NAV ESTA JOYA -->
+            <div class="container link-gris">
+
+                <a class="navbar-brand" href="./index.html">
+                    <h1 class="mb-1">SB Consultora</h1>        
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/derecho.html">Derecho</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contaduria.html">Contaduría</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/seguros.html">Seguros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- La altura del header esta determinada por class="carousel-item altura-index" -->
+        <header id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item altura-index active">
+                        <div class="carousel-caption">
+                            <a href="./pages/derecho.html"><h2 data-aos="fade-down">SB Consultora</h2></a>
+                            <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <video src="./assets/video/video-header.mp4" alt="..." autoplay muted loop playsinline> <!-- esto es una prueba -->
+                    </div>
+
+                    <div class="carousel-item altura-index">
+                        <img src="./assets/img/fide.png" alt="...">
+                        <div class="carousel-caption">
+                            <a href="./pages/derecho.html"><h2>Derecho</h2></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item altura-index">
+                        <img src="./assets/img/dolar-1.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <a href="./pages/contaduria.html"><h2>Contaduría</h2></a>
+                            <p>SLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item altura-index">
+                        <img src="./assets/img/trabajo-2.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <a href="./pages/seguros.html"><h2>Seguros</h2></a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item altura-index">
+                        <img src="./assets/img/mardel-1.jpg" alt="...">
+                        <div class="carousel-caption">
+                            <a href="./pages/contacto.html"><h2>Mar del Plata</h2></a>
+                            <p>Algo sobre Mar del Plata asi al hacer clic se va contacto.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+        </header>
+
+        <aside class="container-fluid flex-pp"> <!-- PUBLICIDAD -->
+            <a target="_blank" href="https://pint.com.ar/"><img class="foto-pp" src="./assets/img/ajedrez-al-paso.jpg" srcset="./assets/img/gemelos-digitales-640.jpg 640w, ./assets/img/gemelos-digitales.jpg 1920w" alt="Publicidad"></a>
+        </aside>
+
+        <main class="container">
+
+            <div class="row link-negro">
+
+                <a class="col-sm-12 " href="./pages/comunidades.html"><h1>Comunidades</h1></a>
+
+                <div class="col-sm-12 col-md-8"> <!-- COMUNIDADES -->
+
+                    <section class="col-sm-12"> <!-- DESTACADA -->
+                            <a href="./pages/comunidades.html">
+                                <img class="foto-pint" src="./assets/img/comunidades/arbol-1920.jpg" srcset="./assets/img/comunidades/arbol.jpg 640w, ./assets/img/comunidades/arbol-1920.jpg 1920w" alt="Comunidad destacada">
+                            </a>
+                            <a href="./pages/comunidades.html"><h3>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h3></a>
+                            <p>La ciudad de La Plata es reconocida por su rica arquitectura y su amplia gama de espacios verdes, entre los cuales se destaca una de las veinticuatro plazas y parques distribuidos estratégicamente en el casco urbano. La Plaza "19 de Noviembre" es, sin duda, un espacio verde de gran valor paisajístico en la historia de esta gran ciudad.</p>
+                    </section>
+
+                    <div class="start-pint col-sm-12"> <!-- INDEX COMUNIDAD -->
+                        <section class="col-md-6 p-1"> <!-- COMUNIDAD -->
+                            <a href="./pages/comunidades.html">
+                                <img class="foto-pint" src="./assets/img/comunidades/regatas.jpg" alt="Comunidad destacada">
+                            </a>
+                            <div>
+                                <a href="./pages/comunidades.html"><h4>Club de Regatas La Plata - 120 años de historia</h4></a>
+                                <p>Luego de la fundación de la ciudad de La Plata en el año 1882 y después de construido el puerto de Ensenada (llamado Puerto La Plata) el Delta del Río Santiago fue el escenario ideal para lugareños e inmigrantes porteños y sus paseos dominicales en búsqueda tanto de naturaleza como de la belleza exótica que proponían la selva marginal y sus arroyos que reemplazan al tradicional paseo del Bosque.</p>
+                            </div>
+                        </section>
+
+                        <section class="col-md-6 p-1"> <!-- COMUNIDAD -->
+                            <a href="./pages/comunidades.html">
+                                <img class="foto-pint" src="./assets/img/comunidades/domo.jpg" alt="Comunidad destacada">
+                            </a>
+                            <div>
+                                <a href="./pages/comunidades.html"><h4>Domo en Bosquesitos, una experiencia extraordinaria en la naturaleza</h4></a>
+                                <p>Este espacio arquitectónico extraordinario se encuentra ubicado en barrio Los Bosquecitos, a solo cinco minutos de Coronel Brandsen y a treinta minutos de La Plata, un lugar mágico que invita a sus huéspedes a vivir una experiencia realmente única dentro de la naturaleza.</p>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-4"> <!-- ASIDE CON ARTICULOS DEL BLOG -->
+
+                    <a class="col-sm-12" href="./pages/blog.html"><h2>Blog</h2></a>
+
+                    <div class="fondo-gris">
+                        <div class="col-sm-12 columna-pint p-3"> 
+                            <a href="./pages/blog.html">
+                                <img class="foto-pint" src="./assets/img/blog/blog-cover.jpg" alt="Imagen ilustrativa del articulo">
+                            </a>
+                            <a href="./pages/blog.html"><h5>“Realidad virtual” y nuevos paradigmas</h5></a>
+                            <a href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p><span class="negrita-pint">Jor Amoreo Casotti</span> - CEO & Founder Proptech Pint</p></a>
+                        </div>
+    
+                        <div class="col-sm-12 columna-pint p-3">
+                            <a href="./pages/blog.html">
+                                <img class="foto-pint" src="./assets/img/blog/abrete-sesamo.jpg" alt="Imagen ilustrativa del articulo">
+                            </a>
+                            <a href="./pages/blog.html"><h5>Ábrete sésamo: ingreso a la cuarta revolución industrial</h5></a>
+                            <a href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p><span class="negrita-pint">Gastón Figueras</span> - Lic. en Ciencias Políticas y Relaciones Internacionales</p></a>
+                        </div>
+    
+                        <div class="col-sm-12 columna-pint p-3">
+                            <a href="./pages/blog.html">
+                                <img class="foto-pint" src="./assets/img/blog/color-exito.jpg" alt="Imagen ilustrativa del articulo">
+                            </a>
+                            <a href="./pages/blog.html"><h5>El Color del Éxito</h5></a>
+                            <a href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p><span class="negrita-pint">Daniel Alejandro Briceño Moreno</span> - Lic. en Ciencias Economicas</p></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="container"> <!-- WHATSAPP -->
+            <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492213562858" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <aside class="container-fluid flex-pint"> <!-- PUBLICIDAD -->
+            <a target="_blank" href="https://pint.com.ar/"><img class="foto-" src="./assets/img/ajedrez-al-paso.jpg" srcset="./assets/img/nuevo-paradigma-640.jpg 640w, ./assets/img/nuevo-paradigma.jpg 1920w" alt="Publicidad"></a>
+        </aside>
+
+        <footer class="container-fluid"> <!-- DERECHOS, LEGALES, CONTACTO -->
+            <div class="row footer-negro link-gris">
+                <ul class="nav col-sm-12 col-md-7 flex-footer">
+                    <li class="list-inline-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./pages/derecho.html">Derecho</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./pages/contaduria.html">Contaduría</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./pages/seguros.html">Seguros</a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+                <ul class="nav col-sm-12 col-md-5 flex-footer">
+                    <li class="list-inline-item"><a class="nav-link" href="https://www.facebook.com/-"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="https://twitter.com/-"><i class="bi bi-twitter-x"></i></a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="https://www.instagram.com/-"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a class="nav-link" href="https://www.linkedin.com/company/-"><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+                <h6 class="col-sm-12 flex-footer">2024 &copy; SB Consultora</h6>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-nvAa0n0iinX5PJq0dzl+hfiArCZ3mDUmIkI1Mwsud1EE5S/n6ZgJugJyAMV2E9t6" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <script src="./js/app.js"></script>
+
+    </body>
+
+</html>

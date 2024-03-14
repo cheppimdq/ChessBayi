@@ -1,0 +1,72 @@
+
+.aside {
+
+    .foto-pp {
+        @extend %foto-pp;
+    }
+    
+    .flex-pp {
+        @extend %flex-pp;
+    }
+
+}
+
+
+.botonera-pp {
+    height: 21vh;
+    @extend %flex-pp;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: .75rem;
+    .boton-pp {
+        background-color: map-get($color-pp, blanco-1); // ACA VA EL MISMO COLOR QUE EL FONDO NEGRO !!!
+        @extend %columna-pp;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        i {
+            font-size: 2rem;
+            margin: 1.25rem;
+            padding: 1.25rem;
+        }
+    }
+}
+
+
+
+.mapa-pp {
+    @extend %foto-pp;
+    height: 66vh;
+}
+
+/* WHATSAPP */
+.boton-wp { 
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    width: 3.8rem;  // Ancho del círculo
+    height: 3.8rem; // Altura del círculo
+
+    background-color: map-get($color-pp, whatsapp);
+    color: map-get($color-pp, blanco-1);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+
+    i {
+        font-size: 1.8rem;
+    }
+
+    &:hover {
+        background-color: map-get($color-pp, blanco-1);
+        color: map-get($color-pp, whatsapp);
+    }
+}

@@ -1,0 +1,148 @@
+
+
+
+
+                <main class="container fondo-blanco-2">
+<!--             <div class="row link-negro">
+
+                <div class="col-sm-12 col-md-8 start-pp" >
+
+                    <div class="col-sm-6">
+                            <a href="./pages/comunidades.html">
+                                <img class="foto-pp" src="./assets/img/deposito-6.jpg" alt="">
+                            </a>
+                            <a href="./pages/comunidades.html"><h3>Plaza 19 de noviembre en La Plata, un espacio para el encuentro y la recreación</h3></a>
+                            <p>La ciudad de La Plata es reconocida por su rica arquitectura y su amplia gama de espacios verdes, entre los cuales se destaca una de las veinticuatro plazas y parques distribuidos estratégicamente en el casco urbano. La Plaza "19 de Noviembre" es, sin duda, un espacio verde de gran valor paisajístico en la historia de esta gran ciudad.</p>
+                    </div>
+
+                    <div class=" col-sm-6 columna-pp">
+                        <section class="p-1">
+                            <a href="./pages/comunidades.html">
+                                <img class="foto-pp" src="./assets/img/tipo-1.jpg" alt="">
+                            </a>
+                            <div>
+                                <a href="./pages/comunidades.html"><h4>Club de Regatas La Plata - 120 años de historia</h4></a>
+                                <p>Luego de la fundación de la ciudad de La Plata en el año 1882 y después de construido el puerto de Ensenada (llamado Puerto La Plata) el Delta del Río Santiago fue el escenario ideal para lugareños e inmigrantes porteños y sus paseos dominicales en búsqueda tanto de naturaleza como de la belleza exótica que proponían la selva marginal y sus arroyos que reemplazan al tradicional paseo del Bosque.</p>
+                            </div>
+                        </section>
+
+                        <section class="p-1">
+                            <a href="./pages/comunidades.html">
+                                <img class="foto-pp" src="./assets/img/taxi.jpg" alt=Comunidad destacada">
+                            </a>
+                            <div>
+                                <a href="./pages/comunidades.html"><h4>Domo en Bosquesitos, una experiencia extraordinaria en la naturaleza</h4></a>
+                                <p>Este espacio arquitectónico extraordinario se encuentra ubicado en barrio Los Bosquecitos, a solo cinco minutos de Coronel Brandsen y a treinta minutos de La Plata, un lugar mágico que invita a sus huéspedes a vivir una experiencia realmente única dentro de la naturaleza.</p>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-4 fondo-blanco-1">
+                        <div class="col-sm-12 columna-pp p-3"> 
+                            <a href="./pages/blog.html">
+                                <img class="foto-pp" src="./assets/img/piba.jpg" alt="Imagen ilustrativa del articulo">
+                            </a>
+                            <a href="./pages/blog.html"><h5>“Realidad virtual” y nuevos paradigmas</h5></a>
+                            <a href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p><span class="negrita-pint">Jor Amoreo Casotti</span> - CEO & Founder Proptech Pint</p></a>
+                        </div>
+                        <div class="col-sm-12 columna-pp p-3">
+                            <a href="./pages/blog.html">
+                                <img class="foto-pp" src="./assets/img/trabajo-2.jpg" alt="Imagen ilustrativa del articulo">
+                            </a>
+                            <a href="./pages/blog.html"><h5>Ábrete sésamo: ingreso a la cuarta revolución industrial</h5></a>
+                            <a href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p><span class="negrita-pint">Gastón Figueras</span> - Lic. en Ciencias Políticas y Relaciones Internacionales</p></a>
+                        </div>
+                        <div class="col-sm-12 columna-pp p-3">
+                            <a href="./pages/blog.html">
+                                <img class="foto-pp" src="./assets/img/trabajo-1.jpg" alt="Imagen ilustrativa del articulo">
+                            </a>
+                            <a href="./pages/blog.html"><h5>El Color del Éxito</h5></a>
+                            <a href="https://www.linkedin.com/in/jor-amoreo-casotti/" target="_blank"><p><span class="negrita-pint">Daniel Alejandro Briceño Moreno</span> - Lic. en Ciencias Economicas</p></a>
+                        </div>
+                </div>
+
+            </div> -->
+        </main>
+
+        <!-- ARTICULOS PARA FOOTER -->
+        <article class="container link-negro">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 columna-pp fondo-blanco-1">
+                    <img src="./assets/img/taxi.jpg" alt="Foto descriptiva Comunidad">
+                    <a href="../pages/404.html"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, cupiditate nihil eum numquam molestiae vel. Dolores reprehenderit at delectus. Numquam eaque velit assumenda cupiditate ab, corrupti necessitatibus explicabo quas odio.</p>
+                </div>
+        
+                <div class="col-sm-12 col-md-4 columna-pp fondo-blanco-1">
+                    <img src="./assets/img/trabajo-1.jpg" alt="Foto descriptiva Comunidad">
+                    <a href="./pages/404.html"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, delectus dolores ut animi unde at? Laborum mollitia aut dolores asperiores veniam, voluptate voluptatum delectus natus magnam odio dolor omnis suscipit.</p>
+                </div>
+        
+                <div class="col-sm-12 col-md-4 columna-pp fondo-blanco-1">
+                    <img src="./assets/img/trabajo-2.jpg" alt="Foto descriptiva Comunidad">
+                    <a href="./pages/404.html"><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nihil cupiditate est perspiciatis at ipsa laboriosam ducimus, eligendi necessitatibus veniam? Voluptatem voluptas unde sequi doloremque possimus dolorum adipisci maiores reprehenderit?</p>
+                </div>
+
+            </div>
+
+
+        </article>
+
+        <!-- PERFILES - NO LLEVA CONTAINER -->
+        <article class=" fondo-negro-2">
+
+            <div class="container">
+                <div class="row start-pp">
+                    <div class="col-sm-12 col-md-3 contenedor-profesional" data-aos="fade-up" data-aos-delay=»50″> 
+                        <div class="foto-profesional">
+                            <img src="./assets/img/perfil-2.jpg" alt="">
+                            <div class="link-blanco">
+                                <a href="https://www.linkedin.com/in/nelson-alejandro-di-lernia-5291a388/"><h5>Alejandro Di Lernia</h5></a>
+                                <a href="https://www.linkedin.com/in/nelson-alejandro-di-lernia-5291a388/"><i class="bi bi-linkedin"></i> Contador Público</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3  contenedor-profesional" data-aos="fade-up" data-aos-delay=»50″> 
+                        <div class="foto-profesional">
+                            <img src="./assets/img/perfil-5.jpg" alt="">
+                            <div class="link-blanco">
+                                <a href="https://www.linkedin.com/in/nelson-alejandro-di-lernia-5291a388/"><h5>Alejandro Di Lernia</h5></a>
+                                <a href="https://www.linkedin.com/in/nelson-alejandro-di-lernia-5291a388/"><i class="bi bi-linkedin"></i> Contador Público</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3  contenedor-profesional" data-aos="fade-up" data-aos-delay=»50″> 
+                        <div class="foto-profesional">
+                            <img src="./assets/img/perfil-6.jpg" alt="">
+                            <div class="link-blanco">
+                                <a href="https://www.linkedin.com/in/nelson-alejandro-di-lernia-5291a388/"><h5>Alejandro Di Lernia</h5></a>
+                                <a href="https://www.linkedin.com/in/nelson-alejandro-di-lernia-5291a388/"><i class="bi bi-linkedin"></i> Contador Público</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </article>
+
+        <!-- NEGRO-1 -->
+        <article class="fondo-negro-1">
+            <div class="container">
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <p>Earum enim voluptatem ea distinctio dolor nam aperiam minus nisi voluptates nulla, vitae in temporibus? Perspiciatis enim, deserunt obcaecati repudiandae deleniti natus.</p>
+            </div>
+        </article>
+
+        <aside class="container"> <!-- WHATSAPP -->
+            <a class="boton-wp" href="https://api.whatsapp.com/send?phone=5492235273928" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </aside>
