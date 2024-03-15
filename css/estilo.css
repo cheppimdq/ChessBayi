@@ -5,7 +5,7 @@
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .flex-publicidad, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla, .start-pp, .center-pp, .row-main-index .start-main-index, .row-main-index {
+.footer-negro .flex-footer, .flex-publicidad, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla .despegable-tabla, .row-tabla, .start-pp, .center-pp, .row-main-index .start-main-index, .row-main-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -260,9 +260,13 @@ body main, body article {
   justify-content: space-evenly;
   align-content: space-around;
 }
-
-.fila-clickeable:hover {
+.row-tabla .fila-clickeable:hover {
   cursor: pointer;
+}
+.row-tabla .despegable-tabla {
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .contenedor-profesional {
