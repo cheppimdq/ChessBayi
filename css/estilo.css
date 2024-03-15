@@ -238,6 +238,7 @@ body main, body article {
   margin: 1.25rem;
   padding: 1.25rem;
   gap: 1.5rem;
+  text-align: center;
 }
 .flex-publicidad i {
   font-size: 3rem;
@@ -264,8 +265,6 @@ body main, body article {
   align-items: start;
   justify-content: space-evenly;
   align-content: space-around;
-  margin: 0.75rem;
-  padding: 0.75rem;
 }
 
 .fila-clickeable:hover {
