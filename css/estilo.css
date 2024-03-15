@@ -47,6 +47,7 @@ body main, body article {
 
 .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
   font-size: 1rem;
+  text-decoration: none;
   color: #ffffff;
 }
 .link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
@@ -66,6 +67,7 @@ body main, body article {
 
 .link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
   font-size: 1rem;
+  text-decoration: none;
   color: #cccccc;
 }
 .link-gris a:hover, .link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover {
@@ -85,6 +87,7 @@ body main, body article {
 
 .link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
   font-size: 1rem;
+  text-decoration: none;
   color: #000000;
 }
 .link-negro a:hover, .link-negro .nav-link:hover, .link-negro .nav-link:hover:hover, .link-negro .nav-link.active:hover {
@@ -104,6 +107,7 @@ body main, body article {
 
 .link-azul a, .link-azul .nav-link, .link-azul .nav-link:hover, .link-azul .nav-link.active {
   font-size: 1rem;
+  text-decoration: none;
   color: #3b70d8;
 }
 .link-azul a:hover, .link-azul .nav-link:hover, .link-azul .nav-link:hover:hover, .link-azul .nav-link.active:hover {
