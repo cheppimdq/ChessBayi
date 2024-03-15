@@ -5,7 +5,7 @@
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .botonera-pp, .flex-pp, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-pp, .center-pp, .start-index {
+.footer-negro .flex-footer, .botonera-pp, .flex-pp, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-pp, .center-pp, .flex-publicidad, .start-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -229,6 +229,19 @@ body main, body article {
 
 .start-index {
   align-items: start;
+}
+
+.flex-publicidad {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  gap: 1.5rem;
+}
+.flex-publicidad i {
+  font-size: 3rem;
+  color: #d14642;
 }
 
 .center-pp {

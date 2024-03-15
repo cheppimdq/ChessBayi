@@ -7,6 +7,22 @@
 .start-index {
     @extend %flex-pp;
     align-items: start;
+
+}
+
+.flex-publicidad {
+    @extend %flex-pp;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    gap: 1.5rem;
+    i { 
+        font-size: 3rem;
+        color: map-get($color-pp, rojito);
+    }
+
 }
 
 .center-pp {
