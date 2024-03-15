@@ -66,7 +66,7 @@
     height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
     @extend %parallax-pp;
     @extend %parallax-header;
-    background-image: url("../assets/img/ley-1.jpg");
+    background-image: url("../assets/img/fide-banner.png");
 }
 
 .parallax-contaduria {
@@ -88,5 +88,5 @@
     height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
     @extend %parallax-pp;
     @extend %parallax-header;
-    background-image: url("../assets/img/mardel-1.jpg");
+    background-image: url("../assets/img/teclado.jpg");
 }

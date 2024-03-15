@@ -22,7 +22,6 @@
         font-size: 3rem;
         color: map-get($color-pp, rojito);
     }
-
 }
 
 .center-pp {
@@ -48,30 +47,18 @@
     img { @extend %foto-pp; }
 }
 
-// TARJETA BBVA
-.tarjeta-contenedor {
-    display: flex;
-    gap: 1rem; // Espacio entre los elementos
-    .tarjeta-izquierda {
-        img {
-            @extend %foto-pp;
-            max-height: calc(50% + 0.5rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
-        }
-    }
-    .tarjeta-derecha {
-        @extend %columna-pp;
+.start-tabla {
+    @extend %flex-pp;
+    align-items: start;
+    justify-content: space-evenly;
+    align-content: space-around;
+    margin: .75rem;
+    padding: .75rem;
+}
 
-        gap: 1rem; // Espacio entre los elementos internos
-        .tarjeta-arriba, .tarjeta-abajo {
-            width: 100%;
-            height: calc(50% - .5rem); // 50% de la altura del contenedor menos la mitad del espacio entre los elementos
-            img { @extend %foto-pp; }
-        }
-    }
-    h5, p {
-        margin: .25rem;
-        padding: .25rem;
-    }
+// TORNEOS
+.fila-clickeable:hover {
+    cursor: pointer;
 }
 
 // DIV PERFIL PROFESIONAL - Puede ir en main como section o directamente como article

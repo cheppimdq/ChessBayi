@@ -1,17 +1,17 @@
 @charset "UTF-8";
-.mapa-pp, .flex-pp .foto-pp, .contenedor-profesional .foto-profesional img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-arriba img, .tarjeta-contenedor .tarjeta-derecha .tarjeta-abajo img, .tarjeta-contenedor .tarjeta-izquierda img, .start-pp img, .center-pp img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
+.mapa-pp, .flex-pp .foto-pp, .contenedor-profesional .foto-profesional img, .start-pp img, .center-pp img, .columna-pp img, .carousel-item img, .carousel-item video, .foto-pp {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .botonera-pp, .flex-pp, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-pp, .center-pp, .flex-publicidad, .start-index {
+.footer-negro .flex-footer, .botonera-pp, .flex-pp, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .start-tabla, .start-pp, .center-pp, .flex-publicidad, .start-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.botonera-pp .boton-pp, .tarjeta-contenedor .tarjeta-derecha, .columna-pp {
+.botonera-pp .boton-pp, .columna-pp {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -208,7 +208,7 @@ body main, body article {
 
 .parallax-derecho {
   height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
-  background-image: url("../assets/img/ley-1.jpg");
+  background-image: url("../assets/img/fide-banner.png");
 }
 
 .parallax-contaduria {
@@ -224,7 +224,7 @@ body main, body article {
 
 .parallax-contacto {
   height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
-  background-image: url("../assets/img/mardel-1.jpg");
+  background-image: url("../assets/img/teclado.jpg");
 }
 
 .start-index {
@@ -260,23 +260,16 @@ body main, body article {
   padding: 0.75rem;
   gap: 1.5rem;
 }
-.tarjeta-contenedor {
-  display: flex;
-  gap: 1rem;
+.start-tabla {
+  align-items: start;
+  justify-content: space-evenly;
+  align-content: space-around;
+  margin: 0.75rem;
+  padding: 0.75rem;
 }
-.tarjeta-contenedor .tarjeta-izquierda img {
-  max-height: calc(50% + 0.5rem);
-}
-.tarjeta-contenedor .tarjeta-derecha {
-  gap: 1rem;
-}
-.tarjeta-contenedor .tarjeta-derecha .tarjeta-arriba, .tarjeta-contenedor .tarjeta-derecha .tarjeta-abajo {
-  width: 100%;
-  height: calc(50% - 0.5rem);
-}
-.tarjeta-contenedor h5, .tarjeta-contenedor p {
-  margin: 0.25rem;
-  padding: 0.25rem;
+
+.fila-clickeable:hover {
+  cursor: pointer;
 }
 
 .contenedor-profesional {
