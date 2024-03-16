@@ -56,8 +56,23 @@
     }
 }
 
-// ETIQUETA TORNEO
+// TITULO TORNEO
+.titulo-torneo {
 
+    @extend %flex-pp;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-between;
+    .fecha-torneo {
+        align-content: start;
+    }
+
+    .vivo-torneo {
+        align-content: end;
+    }
+}
+
+// ETIQUETA TORNEO
 .etiqueta-torneo {
     @extend %flex-pp;
     align-items: center;

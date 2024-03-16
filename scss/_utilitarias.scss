@@ -3,6 +3,8 @@
 .link-gris { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(blanco-2, blanco, gris); } } // funcionando en el nav
 .link-negro { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(negro, negro-1, gris); } }
 .link-azul { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(linkedin, negro-1, gris); } }
+.link-rojo { a, .nav-link, .nav-link:hover, .nav-link.active { @include enlace-pp(rojito, negro-1, gris); } }
+
 
 // COLORES DE FONDO
 .fondo-blanco { background-color: map-get($color-pp, blanco); }

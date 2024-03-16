@@ -4,7 +4,7 @@
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .flex-publicidad, .articulo-start-footer, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .etiqueta-torneo, .row-tabla .despegable-tabla, .row-tabla, .tira-video, .articulo-main-start, .noticias-articulo-row, .row-main-index .start-main-index, .row-main-index {
+.footer-negro .flex-footer, .flex-publicidad, .articulo-start-footer, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .etiqueta-torneo, .titulo-torneo, .row-tabla .despegable-tabla, .row-tabla, .tira-video, .articulo-main-start, .noticias-articulo-row, .row-main-index .start-main-index, .row-main-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -104,6 +104,26 @@ body a {
 }
 @media screen and (min-width: 640px) {
   .link-azul a, .link-azul .nav-link, .link-azul .nav-link:hover, .link-azul .nav-link.active {
+    font-size: 1rem;
+  }
+}
+
+.link-rojo a, .link-rojo .nav-link, .link-rojo .nav-link:hover, .link-rojo .nav-link.active {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #d14642;
+}
+.link-rojo a:hover, .link-rojo .nav-link:hover, .link-rojo .nav-link:hover:hover, .link-rojo .nav-link.active:hover {
+  color: #333333;
+}
+.link-rojo a.active, .link-rojo .nav-link.active, .link-rojo .nav-link:hover.active, .link-rojo .nav-link.active.active {
+  color: #767676;
+}
+.link-rojo a.active:hover, .link-rojo .nav-link.active:hover, .link-rojo .nav-link:hover.active:hover, .link-rojo .nav-link.active.active:hover {
+  color: #333333;
+}
+@media screen and (min-width: 640px) {
+  .link-rojo a, .link-rojo .nav-link, .link-rojo .nav-link:hover, .link-rojo .nav-link.active {
     font-size: 1rem;
   }
 }
@@ -215,6 +235,18 @@ body a {
   align-items: center;
   justify-content: space-evenly;
   align-content: space-evenly;
+}
+
+.titulo-torneo {
+  align-items: start;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.titulo-torneo .fecha-torneo {
+  align-content: start;
+}
+.titulo-torneo .vivo-torneo {
+  align-content: end;
 }
 
 .etiqueta-torneo {
