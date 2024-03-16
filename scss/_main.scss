@@ -51,9 +51,19 @@
     .despegable-tabla {
         @extend %flex-pp;
         align-items: center;
-        justify-content: space-between;
-        align-content: center;
+        justify-content: space-evenly;
+        align-content: space-evenly;
     }
+}
+
+// ETIQUETA TORNEO
+
+.etiqueta-torneo {
+    @extend %flex-pp;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-around;
+    text-align: center;
 }
 
 // RATING - PERFIL PROFESIONAL

@@ -4,7 +4,7 @@
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .flex-publicidad, .articulo-start-footer, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla .despegable-tabla, .row-tabla, .tira-video, .articulo-main-start, .noticias-articulo-row, .row-main-index .start-main-index, .row-main-index {
+.footer-negro .flex-footer, .flex-publicidad, .articulo-start-footer, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .etiqueta-torneo, .row-tabla .despegable-tabla, .row-tabla, .tira-video, .articulo-main-start, .noticias-articulo-row, .row-main-index .start-main-index, .row-main-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -213,8 +213,15 @@ body a {
 }
 .row-tabla .despegable-tabla {
   align-items: center;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.etiqueta-torneo {
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-around;
+  text-align: center;
 }
 
 .contenedor-profesional {
