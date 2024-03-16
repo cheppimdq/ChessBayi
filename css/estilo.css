@@ -1,16 +1,16 @@
-.mapa-pp, .contenedor-profesional .foto-profesional img, .start-pp img, .center-pp img, .row-main-index .columna-main-index img, .carousel-item img, .carousel-item video, .foto-pp {
+.mapa-pp, .carousel-item img, .carousel-item video, body img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .flex-publicidad, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla .despegable-tabla, .row-tabla, .start-pp, .center-pp, .row-main-index .start-main-index, .row-main-index {
+.footer-negro .flex-footer, .flex-publicidad, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla .despegable-tabla, .row-tabla, .articulo-start-footer, .row-main-index .start-main-index, .row-main-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.row-main-index .columna-main-index {
+.articulo-start-footer .columna-articulo-footer, .row-main-index .columna-main-index {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -28,15 +28,6 @@ body {
 body a {
   text-decoration: none;
 }
-body main, body article {
-  margin: 0.75rem;
-  padding: 0.75rem;
-}
-
-.animacion-pp {
-  overflow-x: hidden;
-}
-
 .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
   font-size: 1rem;
   text-decoration: none;
@@ -196,15 +187,7 @@ body main, body article {
 .row-main-index .start-main-index {
   justify-content: space-between;
 }
-.center-pp {
-  align-items: center;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  margin: 1.25rem;
-  padding: 1.25rem;
-  gap: 1.5rem;
-}
-.start-pp {
+.articulo-start-footer {
   align-items: start;
   justify-content: space-evenly;
   align-content: space-around;
@@ -226,7 +209,6 @@ body main, body article {
 .contenedor-profesional {
   justify-content: space-between;
   align-items: center;
-  overflow-x: hidden;
 }
 .contenedor-profesional .foto-profesional {
   position: relative;

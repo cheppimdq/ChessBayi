@@ -6,9 +6,6 @@
 
 body {
     a { text-decoration: none; } // si se saca de aca, volver a meter en @mixin enlace-pp
-    main, article {
-        margin: .75rem;
-        padding: .75rem;
-    }
+    img { @extend %foto-pp; }
     overflow-x: hidden;
 }

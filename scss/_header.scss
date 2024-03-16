@@ -1,14 +1,13 @@
+// NAV
 .nav-negro {
     h1 { font-size: inherit; }
     i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
 }
 
+// ALTURA HEADER
 .altura-100 { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
-
 .altura-79 { height: calc(79vh - 56px); } // estas alturas con las del carousel item
-
 .altura-36 { height: calc(66vh - 56px); } // estas alturas con las del carousel item
-
 
 // HEADER DEL INDEX
 .carousel-item  {
