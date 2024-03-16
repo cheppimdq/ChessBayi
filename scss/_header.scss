@@ -3,9 +3,12 @@
     i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
 }
 
-.altura-index { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
+.altura-100 { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
 
-.altura-seguros { height: calc(79vh - 56px); } // estas alturas con las del carousel item
+.altura-79 { height: calc(79vh - 56px); } // estas alturas con las del carousel item
+
+.altura-36 { height: calc(66vh - 56px); } // estas alturas con las del carousel item
+
 
 // HEADER DEL INDEX
 .carousel-item  {
@@ -36,57 +39,4 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
         }
     }
-}
-
-// HEADERS DERECHO, CONTADURIA, SEGUROS y CONTACTO
-%parallax-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    // ESTO SE REPITE HAY QUE RESUMIRLO
-    h2 {
-        font-family: map-get($fuente-pp, h2-carousel);
-        color: map-get($color-pp, blanco);
-        font-size: 3rem;
-        font-weight: bolder;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);;
-    }
-
-    p {
-        color: map-get($color-pp, blanco);
-        font-size: 1rem;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
-    }
-}
-
-// TODOS LOS PARALLAX
-.parallax-derecho {
-    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
-    @extend %parallax-pp;
-    @extend %parallax-header;
-    background-image: url("../assets/img/fide-banner.png");
-}
-
-.parallax-contaduria {
-    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
-    background-image: url("../assets/img/fada-banner.jpg");
-    @extend %parallax-pp;
-    @extend %parallax-header;
-}
-
-.parallax-seguros {
-    width: 100%;
-    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
-    @extend %parallax-pp;
-    @extend %parallax-header;
-    background-image: url("../assets/img/trabajo-2.jpg");
-}
-
-.parallax-contacto {
-    height: calc(67vh - 56px); /* Altura dinámica en función de la altura del navbar de bootstrap 56px */
-    @extend %parallax-pp;
-    @extend %parallax-header;
-    background-image: url("../assets/img/teclado.jpg");
 }
