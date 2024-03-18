@@ -1,4 +1,4 @@
-.mapa-pp, .carousel-item img, .carousel-item video, body img {
+.mapa-pp, .carousel-pp .carousel-item img, .carousel-pp .carousel-item video, body img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -28,102 +28,102 @@ body {
 body a {
   text-decoration: none;
 }
-.link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
+.link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active, .link-blanco i {
   font-size: 1rem;
   text-decoration: none;
   color: #ffffff;
 }
-.link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover {
+.link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover, .link-blanco i:hover {
   color: #eeeeee;
 }
-.link-blanco a.active, .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active {
+.link-blanco a.active, .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active, .link-blanco i.active {
   color: #767676;
 }
-.link-blanco a.active:hover, .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover {
+.link-blanco a.active:hover, .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover, .link-blanco i.active:hover {
   color: #eeeeee;
 }
 @media screen and (min-width: 640px) {
-  .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active {
+  .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active, .link-blanco i {
     font-size: 1rem;
   }
 }
 
-.link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
+.link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active, .link-gris i {
   font-size: 1rem;
   text-decoration: none;
   color: #cccccc;
 }
-.link-gris a:hover, .link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover {
+.link-gris a:hover, .link-gris .nav-link:hover, .link-gris .nav-link:hover:hover, .link-gris .nav-link.active:hover, .link-gris i:hover {
   color: #ffffff;
 }
-.link-gris a.active, .link-gris .nav-link.active, .link-gris .nav-link:hover.active, .link-gris .nav-link.active.active {
+.link-gris a.active, .link-gris .nav-link.active, .link-gris .nav-link:hover.active, .link-gris .nav-link.active.active, .link-gris i.active {
   color: #767676;
 }
-.link-gris a.active:hover, .link-gris .nav-link.active:hover, .link-gris .nav-link:hover.active:hover, .link-gris .nav-link.active.active:hover {
+.link-gris a.active:hover, .link-gris .nav-link.active:hover, .link-gris .nav-link:hover.active:hover, .link-gris .nav-link.active.active:hover, .link-gris i.active:hover {
   color: #ffffff;
 }
 @media screen and (min-width: 640px) {
-  .link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active {
+  .link-gris a, .link-gris .nav-link, .link-gris .nav-link:hover, .link-gris .nav-link.active, .link-gris i {
     font-size: 1rem;
   }
 }
 
-.link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
+.link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active, .link-negro i {
   font-size: 1rem;
   text-decoration: none;
   color: #000000;
 }
-.link-negro a:hover, .link-negro .nav-link:hover, .link-negro .nav-link:hover:hover, .link-negro .nav-link.active:hover {
+.link-negro a:hover, .link-negro .nav-link:hover, .link-negro .nav-link:hover:hover, .link-negro .nav-link.active:hover, .link-negro i:hover {
   color: #333333;
 }
-.link-negro a.active, .link-negro .nav-link.active, .link-negro .nav-link:hover.active, .link-negro .nav-link.active.active {
+.link-negro a.active, .link-negro .nav-link.active, .link-negro .nav-link:hover.active, .link-negro .nav-link.active.active, .link-negro i.active {
   color: #767676;
 }
-.link-negro a.active:hover, .link-negro .nav-link.active:hover, .link-negro .nav-link:hover.active:hover, .link-negro .nav-link.active.active:hover {
+.link-negro a.active:hover, .link-negro .nav-link.active:hover, .link-negro .nav-link:hover.active:hover, .link-negro .nav-link.active.active:hover, .link-negro i.active:hover {
   color: #333333;
 }
 @media screen and (min-width: 640px) {
-  .link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active {
+  .link-negro a, .link-negro .nav-link, .link-negro .nav-link:hover, .link-negro .nav-link.active, .link-negro i {
     font-size: 1rem;
   }
 }
 
-.link-azul a, .link-azul .nav-link, .link-azul .nav-link:hover, .link-azul .nav-link.active {
+.link-azul a, .link-azul .nav-link, .link-azul .nav-link:hover, .link-azul .nav-link.active, .link-azul i {
   font-size: 1rem;
   text-decoration: none;
   color: #3b70d8;
 }
-.link-azul a:hover, .link-azul .nav-link:hover, .link-azul .nav-link:hover:hover, .link-azul .nav-link.active:hover {
+.link-azul a:hover, .link-azul .nav-link:hover, .link-azul .nav-link:hover:hover, .link-azul .nav-link.active:hover, .link-azul i:hover {
   color: #333333;
 }
-.link-azul a.active, .link-azul .nav-link.active, .link-azul .nav-link:hover.active, .link-azul .nav-link.active.active {
+.link-azul a.active, .link-azul .nav-link.active, .link-azul .nav-link:hover.active, .link-azul .nav-link.active.active, .link-azul i.active {
   color: #767676;
 }
-.link-azul a.active:hover, .link-azul .nav-link.active:hover, .link-azul .nav-link:hover.active:hover, .link-azul .nav-link.active.active:hover {
+.link-azul a.active:hover, .link-azul .nav-link.active:hover, .link-azul .nav-link:hover.active:hover, .link-azul .nav-link.active.active:hover, .link-azul i.active:hover {
   color: #333333;
 }
 @media screen and (min-width: 640px) {
-  .link-azul a, .link-azul .nav-link, .link-azul .nav-link:hover, .link-azul .nav-link.active {
+  .link-azul a, .link-azul .nav-link, .link-azul .nav-link:hover, .link-azul .nav-link.active, .link-azul i {
     font-size: 1rem;
   }
 }
 
-.link-rojo a, .link-rojo .nav-link, .link-rojo .nav-link:hover, .link-rojo .nav-link.active {
+.link-rojo a, .link-rojo .nav-link, .link-rojo .nav-link:hover, .link-rojo .nav-link.active, .link-rojo i {
   font-size: 1rem;
   text-decoration: none;
   color: #d14642;
 }
-.link-rojo a:hover, .link-rojo .nav-link:hover, .link-rojo .nav-link:hover:hover, .link-rojo .nav-link.active:hover {
-  color: #333333;
+.link-rojo a:hover, .link-rojo .nav-link:hover, .link-rojo .nav-link:hover:hover, .link-rojo .nav-link.active:hover, .link-rojo i:hover {
+  color: #DB5461;
 }
-.link-rojo a.active, .link-rojo .nav-link.active, .link-rojo .nav-link:hover.active, .link-rojo .nav-link.active.active {
+.link-rojo a.active, .link-rojo .nav-link.active, .link-rojo .nav-link:hover.active, .link-rojo .nav-link.active.active, .link-rojo i.active {
   color: #767676;
 }
-.link-rojo a.active:hover, .link-rojo .nav-link.active:hover, .link-rojo .nav-link:hover.active:hover, .link-rojo .nav-link.active.active:hover {
-  color: #333333;
+.link-rojo a.active:hover, .link-rojo .nav-link.active:hover, .link-rojo .nav-link:hover.active:hover, .link-rojo .nav-link.active.active:hover, .link-rojo i.active:hover {
+  color: #DB5461;
 }
 @media screen and (min-width: 640px) {
-  .link-rojo a, .link-rojo .nav-link, .link-rojo .nav-link:hover, .link-rojo .nav-link.active {
+  .link-rojo a, .link-rojo .nav-link, .link-rojo .nav-link:hover, .link-rojo .nav-link.active, .link-rojo i {
     font-size: 1rem;
   }
 }
@@ -170,30 +170,26 @@ body a {
 }
 
 .altura-79 {
-  height: calc(79vh - 56px);
-}
-
-.altura-36 {
   height: calc(66vh - 56px);
 }
 
-.carousel-item img, .carousel-item video {
+.carousel-pp .carousel-item img, .carousel-pp .carousel-item video {
   height: 100%;
 }
-.carousel-item .carousel-caption {
+.carousel-pp .carousel-caption {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.carousel-item .carousel-caption h2 {
+.carousel-pp .carousel-caption h2 {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bolder;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
-.carousel-item .carousel-caption p {
+.carousel-pp .carousel-caption p {
   color: #ffffff;
   font-size: 1rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
@@ -293,7 +289,7 @@ body a {
 }
 .flex-publicidad i {
   font-size: 3rem;
-  color: #d14642;
+  color: #DB5461;
 }
 
 .mapa-pp {

@@ -6,15 +6,16 @@
 
 // ALTURA HEADER
 .altura-100 { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
-.altura-79 { height: calc(79vh - 56px); } // estas alturas con las del carousel item
-.altura-36 { height: calc(66vh - 56px); } // estas alturas con las del carousel item
+.altura-79 { height: calc(66vh - 56px); } // estas alturas con las del carousel item
 
 // HEADER DEL INDEX
-.carousel-item  {
+.carousel-pp {
 
-    img, video {
-        @extend %foto-pp;
-        height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
+    .carousel-item  {
+        img, video {
+            @extend %foto-pp;
+            height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
+        }
     }
 
     .carousel-caption {
