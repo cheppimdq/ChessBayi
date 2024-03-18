@@ -175,6 +175,9 @@ body a {
 
 .carousel-pp .carousel-item img, .carousel-pp .carousel-item video {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .carousel-pp .carousel-caption {
   height: 100%;

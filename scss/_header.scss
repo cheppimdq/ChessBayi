@@ -15,6 +15,9 @@
         img, video {
             @extend %foto-pp;
             height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
