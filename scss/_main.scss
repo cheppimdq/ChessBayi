@@ -7,11 +7,14 @@
 
     .start-main-index {
         @extend %flex-pp;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .columna-main-index { // integrar hay que sacarlo pero ahora sirve para los articulos del footer index.html
         @extend %columna-pp;
+        justify-content: center;
+
+
     }
 }
 

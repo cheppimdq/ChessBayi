@@ -204,8 +204,12 @@ body a {
   align-content: space-around;
 }
 .row-main-index .start-main-index {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
+.row-main-index .columna-main-index {
+  justify-content: center;
+}
+
 .noticias-articulo-row {
   align-items: start;
   justify-content: space-evenly;
