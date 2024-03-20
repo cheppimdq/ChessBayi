@@ -26,19 +26,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: start;
+        text-align: left;
 
         h2 {
             font-family: map-get($fuente-pp, h2-carousel);
             color: map-get($color-pp, blanco);
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: bolder;
             text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
         }
 
         p {
             color: map-get($color-pp, blanco);
-            font-size: 1rem;
+            font-size: 3rem;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
         }
     }

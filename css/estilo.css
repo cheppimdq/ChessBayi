@@ -184,17 +184,18 @@ body a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
+  text-align: left;
 }
 .carousel-pp .carousel-caption h2 {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bolder;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 .carousel-pp .carousel-caption p {
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 3rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
 }
 
@@ -212,7 +213,7 @@ body a {
 
 .noticias-articulo-row {
   align-items: start;
-  justify-content: start;
+  justify-content: space-evenly;
   align-content: space-around;
 }
 

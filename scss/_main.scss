@@ -22,7 +22,7 @@
 .noticias-articulo-row {
     @extend %flex-pp;
     align-items: start;
-    justify-content: start;
+    justify-content: space-evenly;
     align-content: space-around;
 }
 
