@@ -1,82 +1,32 @@
+// Cargar dinámicamente el JSON
+fetch('torneos.json')
+  .then(response => response.json())
+  .then(data => {
+    const calendarioDesplegable = document.getElementById('calendarioDesplegable');
 
-import torneosArray from './torneosArray.js';
+    data.forEach(torneo => {
+      const fila = document.createElement('tr');
+      fila.classList.add('fila-clickeable');
+      fila.setAttribute('data-bs-toggle', 'collapse');
+      fila.setAttribute('data-bs-target', '#collapseOne');
+      fila.setAttribute('aria-expanded', 'false');
+      fila.setAttribute('aria-controls', 'collapseOne');
 
-// Función para crear la tabla desplegable
-function calendarioDesplegable() {
-    const tbody = document.querySelector('.table.table-striped tbody');
-    tbody.innerHTML = ''; // Limpiamos el contenido del tbody
+      const fechaTd = document.createElement('td');
+      fechaTd.textContent = torneo.fecha;
+      fila.appendChild(fechaTd);
 
-    // Recorremos el array de torneos y creamos las filas de la tabla
-    torneosArray.forEach(torneo => {
-        const fila = document.createElement('tr');
-        fila.classList.add('fila-clickeable');
-        fila.setAttribute('data-bs-toggle', 'collapse');
-        fila.setAttribute('data-bs-target', `#${torneo.nombre.replace(/\s+/g, '')}`);
-        fila.setAttribute('aria-expanded', 'false');
-        fila.setAttribute('aria-controls', `${torneo.nombre.replace(/\s+/g, '')}`);
-        fila.innerHTML = `
-        <td>${torneo.fecha}</td>
-        <td>${torneo.nombre}</td>
-        <td>${torneo.localidad}</td>
-        `;
-        tbody.appendChild(fila);
+      const nombreTd = document.createElement('td');
+      nombreTd.textContent = torneo.nombre;
+      fila.appendChild(nombreTd);
 
-        // Creamos la fila colapsable con la información detallada del torneo
-        const filaDetallada = document.createElement('tr');
-        filaDetallada.id = `${torneo.nombre.replace(/\s+/g, '')}`;
-        filaDetallada.classList.add('collapse');
-        filaDetallada.innerHTML = `
-        <td colspan="3">
-            <div class="card-body">
-            <div class="depegable-tabla row">
-                <div class="col-md-8 p-3">
-                <p>Información del Torneo</p>
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <th>Fecha</th>
-                        <td>${torneo.informacion.fecha}</td>
-                    </tr>
-                    <tr>
-                        <th>Ritmo de juego</th>
-                        <td>${torneo.informacion.ritmo}</td>
-                    </tr>
-                    <!-- Agrega más filas según la información que quieras mostrar -->
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-md-4 p-3">
-                <p>Tabla de Horarios</p>
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th>Ronda</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    ${torneo.horarios.map(horario => `
-                        <tr>
-                        <td>${horario.ronda}</td>
-                        <td>${horario.fecha}</td>
-                        <td>${horario.hora}</td>
-                        </tr>
-                    `).join('')}
-                    </tbody>
-                </table>
-                </div>
-            </div>
-            </div>
-        </td>
-        `;
-        tbody.appendChild(filaDetallada);
+      const lugarTd = document.createElement('td');
+      lugarTd.textContent = torneo.lugar;
+      fila.appendChild(lugarTd);
+
+      calendarioDesplegable.appendChild(fila);
     });
-}
-
-export default calendarioDesplegable;
-
-// Llamamos a la función para crear la tabla desplegable al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
-    calendarioDesplegable();
-});
+  })
+  .catch(error => {
+    console.error('Error al cargar el JSON:', error);
+  });
