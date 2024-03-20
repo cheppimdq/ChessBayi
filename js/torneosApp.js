@@ -32,7 +32,7 @@ function llenarTablaTorneos() {
           <div class="card-body">
             <div class="depegable-tabla row">
               <div class="col-md-8 p-3">
-                <p>Información del Torneo</p>
+                <p>Detalles del Torneo</p>
                 <table class="table table-sm">
                   <tbody>
                     ${crearFilasInformacion(torneo.informacion)}
