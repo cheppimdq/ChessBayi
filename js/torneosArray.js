@@ -1,4 +1,4 @@
-[
+const torneos = [
   {
     "fecha": "12-19 de Marzo",
     "nombre": "II Abierto Internacional de FAOGBA",
@@ -61,5 +61,6 @@
       { "ronda": 9, "fecha": "2024/03/30", "hora": "15:00" }
     ]
   }
-]
+];
 
+console.log(torneos);

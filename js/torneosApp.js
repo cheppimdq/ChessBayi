@@ -1,32 +1,87 @@
-// Cargar dinámicamente el JSON
-fetch('torneos.json')
-  .then(response => response.json())
-  .then(data => {
-    const calendarioDesplegable = document.getElementById('calendarioDesplegable');
-
-    data.forEach(torneo => {
+// Esta función toma los datos del array de torneos y los inserta en la tabla HTML
+function llenarTablaTorneos() {
+    // Obtener la referencia al tbody de la tabla en HTML
+    const tbody = document.getElementById('calendarioDesplegable');
+  
+    // Iterar sobre cada torneo en el array
+    torneos.forEach((torneo, indice) => {
+      // Crear una nueva fila para el torneo
       const fila = document.createElement('tr');
       fila.classList.add('fila-clickeable');
-      fila.setAttribute('data-bs-toggle', 'collapse');
-      fila.setAttribute('data-bs-target', '#collapseOne');
+      fila.dataset.bsToggle = 'collapse';
+      fila.dataset.bsTarget = `#collapse${indice + 1}`;
       fila.setAttribute('aria-expanded', 'false');
-      fila.setAttribute('aria-controls', 'collapseOne');
-
-      const fechaTd = document.createElement('td');
-      fechaTd.textContent = torneo.fecha;
-      fila.appendChild(fechaTd);
-
-      const nombreTd = document.createElement('td');
-      nombreTd.textContent = torneo.nombre;
-      fila.appendChild(nombreTd);
-
-      const lugarTd = document.createElement('td');
-      lugarTd.textContent = torneo.lugar;
-      fila.appendChild(lugarTd);
-
-      calendarioDesplegable.appendChild(fila);
+      fila.setAttribute('aria-controls', `collapse${indice + 1}`);
+  
+      // Insertar las celdas con los datos del torneo
+      fila.innerHTML = `
+        <td>${torneo.fecha}</td>
+        <td>${torneo.nombre}</td>
+        <td>${torneo.lugar}</td>
+      `;
+  
+      // Agregar la fila al tbody
+      tbody.appendChild(fila);
+  
+      // Crear la fila colapsable para la información detallada del torneo
+      const filaDetallada = document.createElement('tr');
+      filaDetallada.id = `collapse${indice + 1}`;
+      filaDetallada.classList.add('collapse');
+      filaDetallada.innerHTML = `
+        <td colspan="3">
+          <div class="card-body">
+            <div class="depegable-tabla row">
+              <div class="col-md-8 p-3">
+                <p>Información del Torneo</p>
+                <table class="table table-striped">
+                  <tbody>
+                    ${crearFilasInformacion(torneo.informacion)}
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-4 p-3">
+                <p>Tabla de Horarios</p>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Ronda</th>
+                      <th>Fecha</th>
+                      <th>Hora</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${crearFilasHorarios(torneo.horarios)}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </td>
+      `;
+  
+      // Agregar la fila colapsable al tbody
+      tbody.appendChild(filaDetallada);
     });
-  })
-  .catch(error => {
-    console.error('Error al cargar el JSON:', error);
-  });
+  }
+  
+  // Función para crear las filas de información detallada del torneo
+  function crearFilasInformacion(informacion) {
+    let filas = '';
+    for (const [clave, valor] of Object.entries(informacion)) {
+      filas += `<tr><th>${clave}</th><td>${valor}</td></tr>`;
+    }
+    return filas;
+  }
+  
+  // Función para crear las filas de horarios del torneo
+  function crearFilasHorarios(horarios) {
+    let filas = '';
+    horarios.forEach(horario => {
+      filas += `<tr><td>${horario.ronda}</td><td>${horario.fecha}</td><td>${horario.hora}</td></tr>`;
+    });
+    return filas;
+  }
+  
+  // Llamar a la función para llenar la tabla de torneos al cargar la página
+  llenarTablaTorneos();
+  
