@@ -33,7 +33,7 @@ function llenarTablaTorneos() {
             <div class="depegable-tabla row">
               <div class="col-md-8 p-3">
                 <p>Información del Torneo</p>
-                <table class="table table-striped">
+                <table class="table table-sm">
                   <tbody>
                     ${crearFilasInformacion(torneo.informacion)}
                   </tbody>
@@ -41,7 +41,7 @@ function llenarTablaTorneos() {
               </div>
               <div class="col-md-4 p-3">
                 <p>Tabla de Horarios</p>
-                <table class="table table-bordered">
+                <table class="table table-sm">
                   <thead>
                     <tr>
                       <th>Ronda</th>
