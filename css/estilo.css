@@ -181,7 +181,7 @@ body {
 }
 
 .altura-79 {
-  height: 66vh;
+  height: 50vh;
 }
 
 .carousel-item {
@@ -201,23 +201,20 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
 }
 .carousel-caption h2 {
   color: #ffffff; /* Cambia el color si es necesario */
   font-size: 4rem;
   font-weight: 700;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
-  margin-bottom: 10px; /* Espacio entre h2 y p */
 }
 .carousel-caption p {
-  /* Cambia el color si es necesario */
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
