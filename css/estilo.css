@@ -173,6 +173,9 @@ body a {
   height: calc(66vh - 56px);
 }
 
+.carousel-pp .carousel-item {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .carousel-pp .carousel-item img, .carousel-pp .carousel-item video {
   height: 100%;
   display: flex;
@@ -181,6 +184,7 @@ body a {
 }
 .carousel-pp .carousel-caption {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,15 +192,16 @@ body a {
   text-align: left;
 }
 .carousel-pp .carousel-caption h2 {
-  color: #ffffff;
+  color: #eeeeee;
   font-size: 4rem;
-  font-weight: bolder;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
 }
 .carousel-pp .carousel-caption p {
-  color: #ffffff;
+  color: #cccccc;
   font-size: 3rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .row-main-index {

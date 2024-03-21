@@ -12,6 +12,7 @@
 .carousel-pp {
 
     .carousel-item  {
+
         img, video {
             @extend %foto-pp;
             height: 100%; // Ajusta la altura de la imagen al 100% del contenedor
@@ -19,10 +20,13 @@
             justify-content: center;
             align-items: center;
         }
+        background-color: rgba(0,0,0,0.3);
+
     }
 
     .carousel-caption {
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,17 +34,19 @@
         text-align: left;
 
         h2 {
-            // font-family: map-get($fuente-pp, h2-carousel);
-            color: map-get($color-pp, blanco);
+            color: map-get($color-pp, blanco-1);
             font-size: 4rem;
-            font-weight: bolder;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            font-weight: 700;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+
         }
 
         p {
-            color: map-get($color-pp, blanco);
+            color: map-get($color-pp, blanco-2);
             font-size: 3rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+            font-weight: 400;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+
         }
     }
 }
