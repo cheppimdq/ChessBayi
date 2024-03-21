@@ -1,7 +1,9 @@
-import './header.js';
-
-// Calendarios
-import './torneosArray.js';
-import './torneosApp.js';
-
-
+// SCROLL NAV
+window.addEventListener('scroll', function() {
+    var nav = document.getElementById('navTransparente');
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
