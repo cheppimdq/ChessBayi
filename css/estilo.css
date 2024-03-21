@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 .mapa-pp, .carousel-pp .carousel-item img, .carousel-pp .carousel-item video, body img {
   width: 100%;
   height: auto;
@@ -28,6 +29,12 @@ body {
 body a {
   text-decoration: none;
 }
+h2 {
+  font-family: "Ubuntu, sans-serif";
+  font-weight: 700;
+  font-style: normal;
+}
+
 .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active, .link-blanco i {
   font-size: 1rem;
   text-decoration: none;

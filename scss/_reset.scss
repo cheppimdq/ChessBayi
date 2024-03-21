@@ -9,3 +9,9 @@ body {
     img { @extend %foto-pp; }
     overflow-x: hidden;
 }
+
+h2 { 
+    font-family: map-get($fuente-pp, h2-header); 
+    font-weight: 700;
+    font-style: normal;
+}
