@@ -3,16 +3,15 @@
     h1 { 
         font-size: inherit;
     }
-    background-color: black; /* Color inicial */
+    background-color: map-get($color-pp, negro); /* Color inicial */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
     width: 100%;
     transition: background-color 0.3s ease; /* Transición suave del color */
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
         background-color: transparent; // Cambia a transparente en pantallas grandes
     }
-
     &.scrolled {
-        background-color: black; // Vuelve a ser negro al hacer scroll
+        background-color: map-get($color-pp, negro); // Vuelve a ser negro al hacer scroll
     }
 }
 

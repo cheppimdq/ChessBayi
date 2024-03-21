@@ -158,7 +158,7 @@ body {
 }
 
 .nav-negro {
-  background-color: black; /* Color inicial */
+  background-color: #000000; /* Color inicial */
   z-index: 1000; /* Asegura que esté encima de otros elementos */
   width: 100%;
   transition: background-color 0.3s ease; /* Transición suave del color */
@@ -166,13 +166,13 @@ body {
 .nav-negro h1 {
   font-size: inherit;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .nav-negro {
     background-color: transparent;
   }
 }
 .nav-negro.scrolled {
-  background-color: black;
+  background-color: #000000;
 }
 
 .altura-100 {
