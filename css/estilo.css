@@ -4,7 +4,7 @@
   object-fit: cover;
 }
 
-.footer-negro .flex-footer, .etiqueta-torneo, .titulo-torneo, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla .despegable-tabla, .row-tabla, .articulo-main-start, .row-main-index .start-main-index, .row-main-index {
+.footer-negro .flex-footer, .etiqueta-torneo, .titulo-torneo, .contenedor-profesional .foto-profesional .link-blanco, .contenedor-profesional .foto-profesional, .contenedor-profesional, .row-tabla .despegable-tabla, .row-tabla, .articulo-main-start, .start-main-index {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -200,15 +200,6 @@ body a {
   font-size: 3rem;
   font-weight: 400;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.row-main-index {
-  align-items: start;
-  justify-content: space-evenly;
-  align-content: space-around;
-}
-.row-main-index .start-main-index {
-  justify-content: space-evenly;
 }
 
 .articulo-main-start {

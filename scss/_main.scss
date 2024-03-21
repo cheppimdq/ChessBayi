@@ -1,15 +1,7 @@
 // INDEX - ARTICULOS MAIN
-.row-main-index {
+.start-main-index {
     @extend %flex-pp;
-    align-items: start;
-    justify-content: space-evenly;
-    align-content: space-around;
-
-    .start-main-index {
-        @extend %flex-pp;
-        justify-content: space-evenly;
-    }
-
+    // justify-content: space-evenly;
 }
 
 // ARTICULO - MAIN
