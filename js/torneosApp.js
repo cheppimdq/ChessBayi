@@ -83,4 +83,4 @@ function crearFilasHorarios(horarios) {
 }
 
 // Llamar a la función para llenar la tabla de torneos al cargar la página
-llenarTablaTorneos();
+  llenarTablaTorneos();
