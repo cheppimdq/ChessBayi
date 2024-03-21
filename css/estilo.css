@@ -1,4 +1,5 @@
-.carousel-item img, .carousel-item video, body img {
+@charset "UTF-8";
+.carousel-item img, .carousel-item video, body img, body video {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -10,6 +11,13 @@
   flex-wrap: wrap;
 }
 
+/*
+::-webkit-scrollbar { width: auto; } // Estilos para la barra de desplazamiento
+::-webkit-scrollbar-track { background-color: black; } // Color del fondo del track
+::-webkit-scrollbar-thumb { background-color: gray; } // Color del thumb
+::-webkit-scrollbar-button { background-color: black; } // Color del fondo de las flechas
+::-webkit-scrollbar-button { color: gray; } // Estilos para el botón de arriba
+  */
 * {
   margin: 0;
   padding: 0;
@@ -19,22 +27,19 @@
 body {
   overflow-x: hidden;
 }
-body a {
-  text-decoration: none;
-}
 .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active, .link-blanco i {
   font-size: 1rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #eeeeee;
 }
 .link-blanco a:hover, .link-blanco .nav-link:hover, .link-blanco .nav-link:hover:hover, .link-blanco .nav-link.active:hover, .link-blanco i:hover {
-  color: #eeeeee;
+  color: #ffffff;
 }
 .link-blanco a.active, .link-blanco .nav-link.active, .link-blanco .nav-link:hover.active, .link-blanco .nav-link.active.active, .link-blanco i.active {
   color: #767676;
 }
 .link-blanco a.active:hover, .link-blanco .nav-link.active:hover, .link-blanco .nav-link:hover.active:hover, .link-blanco .nav-link.active.active:hover, .link-blanco i.active:hover {
-  color: #eeeeee;
+  color: #ffffff;
 }
 @media screen and (min-width: 640px) {
   .link-blanco a, .link-blanco .nav-link, .link-blanco .nav-link:hover, .link-blanco .nav-link.active, .link-blanco i {
@@ -196,9 +201,10 @@ body a {
   margin-bottom: 10px; /* Espacio entre h2 y p */
 }
 .carousel-caption p {
-  color: #eeeeee; /* Cambia el color si es necesario */
-  font-size: 3rem;
+  /* Cambia el color si es necesario */
+  font-size: 2rem;
   font-weight: 400;
+  font-style: italic;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 

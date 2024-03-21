@@ -1,5 +1,5 @@
 // LINKS
-.link-blanco { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(blanco, blanco-1, gris); } }
+.link-blanco { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(blanco-1, blanco, gris); } }
 .link-gris { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(blanco-2, blanco, gris); } } // funcionando en el nav
 .link-negro { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(negro, negro-1, gris); } }
 .link-azul { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(linkedin, negro-1, gris); } }

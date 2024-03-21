@@ -43,9 +43,10 @@
     }
 
     p {
-        color: map-get($color-pp, blanco-1); /* Cambia el color si es necesario */
-        font-size: 3rem;
+        /* Cambia el color si es necesario */
+        font-size: 2rem;
         font-weight: 400;
+        font-style: italic;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     }
 }

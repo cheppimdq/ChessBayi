@@ -1,3 +1,11 @@
+/*
+::-webkit-scrollbar { width: auto; } // Estilos para la barra de desplazamiento
+::-webkit-scrollbar-track { background-color: black; } // Color del fondo del track
+::-webkit-scrollbar-thumb { background-color: gray; } // Color del thumb
+::-webkit-scrollbar-button { background-color: black; } // Color del fondo de las flechas
+::-webkit-scrollbar-button { color: gray; } // Estilos para el botón de arriba
+  */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +13,6 @@
 }
 
 body {
-    a { text-decoration: none; } // si se saca de aca, volver a meter en @mixin enlace-pp
-    img { @extend %foto-pp; }
+    img, video { @extend %foto-pp; }
     overflow-x: hidden;
 }
