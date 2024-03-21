@@ -1,5 +1,5 @@
 // Esta función toma los datos del array de torneos y los inserta en la tabla HTML
-function llenarTablaTorneos() {
+function llenarCalendarioTitulos() {
     // Obtener la referencia al tbody de la tabla en HTML
     const tbody = document.getElementById('calendarioDesplegable');
   
@@ -62,25 +62,38 @@ function llenarTablaTorneos() {
       // Agregar la fila colapsable al tbody
       tbody.appendChild(filaDetallada);
     });
-}
 
-// Función para crear las filas de información detallada del torneo
-function crearFilasInformacion(informacion) {
+    // Llamar a la función para insertar títulos en el elemento con id "calendarioTitulos"
+    insertarTitulos();
+  }
+  
+  // Función para insertar los títulos en el elemento con id "calendarioTitulos"
+  function insertarTitulos() {
+    const titulos = document.getElementById('calendarioTitulos');
+    torneos.forEach(torneo => {
+      const titulo = document.createElement('h3');
+      titulo.textContent = `${torneo.fecha} - ${torneo.nombre} (${torneo.lugar})`;
+      titulos.appendChild(titulo);
+    });
+  }
+  
+  // Función para crear las filas de información detallada del torneo
+  function crearFilasInformacion(informacion) {
     let filas = '';
     for (const [clave, valor] of Object.entries(informacion)) {
       filas += `<tr><th>${clave}</th><td>${valor}</td></tr>`;
     }
     return filas;
-}
-
-// Función para crear las filas de horarios del torneo
-function crearFilasHorarios(horarios) {
+  }
+  
+  // Función para crear las filas de horarios del torneo
+  function crearFilasHorarios(horarios) {
     let filas = '';
     horarios.forEach(horario => {
       filas += `<tr><td>${horario.ronda}</td><td>${horario.fecha}</td><td>${horario.hora}</td></tr>`;
     });
     return filas;
-}
-
-// Llamar a la función para llenar la tabla de torneos al cargar la página
-llenarTablaTorneos();
+  }
+  
+  // Llamar a la función para llenar la tabla de torneos al cargar la página
+  llenarCalendarioTitulos();
