@@ -1,24 +1,8 @@
-// PUBLICIDAD
-.flex-publicidad {
-    @extend %flex-pp;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin: 1.25rem;
-    padding: 1.25rem;
-    gap: 1.5rem;
-    text-align: center;
-    i { 
-        font-size: 3rem;
-        color: map-get($color-pp, rojito);
-    }
-}
-
 // GOOGLE MAPS
-.mapa-pp {
-    @extend %foto-pp;
-    height: 66vh;
-}
+// .mapa-pp {
+//     @extend %foto-pp;
+//     height: 66vh;
+// }
 
 // WHATSAPP
 .boton-wp { 
