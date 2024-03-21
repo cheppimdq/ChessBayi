@@ -165,6 +165,7 @@ body {
 }
 .nav-negro h1 {
   font-size: inherit;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .nav-negro {

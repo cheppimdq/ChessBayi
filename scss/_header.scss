@@ -2,6 +2,7 @@
 .nav-negro {
     h1 { 
         font-size: inherit;
+        color: map-get($color-pp, blanco );
     }
     background-color: map-get($color-pp, negro); /* Color inicial */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
