@@ -1,3 +1,11 @@
+// OCULTAR
+.ocultar {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    };
+}
+
 // LINKS
 .link-blanco { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(blanco-1, blanco, gris); } }
 .link-gris { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(blanco-2, blanco, gris); } } // funcionando en el nav
