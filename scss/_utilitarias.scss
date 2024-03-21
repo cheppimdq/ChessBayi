@@ -5,7 +5,6 @@
 .link-azul { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(linkedin, negro-1, gris); } }
 .link-rojo { a, .nav-link, .nav-link:hover, .nav-link.active, i { @include enlace-pp(rojo, rojito, gris); } }
 
-
 // COLORES DE FONDO
 .fondo-blanco { background-color: map-get($color-pp, blanco); }
 .fondo-blanco-1 { background-color: map-get($color-pp, blanco-1); }

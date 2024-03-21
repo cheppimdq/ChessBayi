@@ -1,15 +1,30 @@
 // NAV
 .nav-negro {
-    h1 { font-size: inherit; }
-    i { color: map-get($color-pp, blanco-2); } // Acá va el mismo color que el link gris !!!
+    h1 { 
+        font-size: inherit;
+    }
+    background-color: black; /* Color inicial */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transición suave del color */
+    @media (min-width: 992px) {
+        background-color: transparent; // Cambia a transparente en pantallas grandes
+    }
+
+    &.scrolled {
+        background-color: black; // Vuelve a ser negro al hacer scroll
+    }
 }
 
+
 // ALTURA HEADER
-.altura-100 { height: calc(100vh - 56px); } // Altura dinámica en función de la altura del navbar de bootstrap 56px
-.altura-79 { height: calc(66vh - 56px); } // estas alturas con las del carousel item
+.altura-100 { height: 100vh; } // Altura dinámica en función de la altura del navbar de bootstrap 56px
+.altura-79 { height: 66vh; } // estas alturas con las del carousel item
 
 // HEADER DEL INDEX
 .carousel-item  {
+    position: relative; /* Agrega posicionamiento relativo */
+    z-index: 0; /* Asegura que esté detrás del nav */
     img, video {
         @extend %foto-pp;
         height: 100%; // Ajusta la altura de la imagen al 100% del contenedor

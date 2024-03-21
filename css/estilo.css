@@ -157,21 +157,36 @@ body {
   background-color: #000000;
 }
 
+.nav-negro {
+  background-color: black; /* Color inicial */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  width: 100%;
+  transition: background-color 0.3s ease; /* Transición suave del color */
+}
 .nav-negro h1 {
   font-size: inherit;
 }
-.nav-negro i {
-  color: #cccccc;
+@media (min-width: 992px) {
+  .nav-negro {
+    background-color: transparent;
+  }
+}
+.nav-negro.scrolled {
+  background-color: black;
 }
 
 .altura-100 {
-  height: calc(100vh - 56px);
+  height: 100vh;
 }
 
 .altura-79 {
-  height: calc(66vh - 56px);
+  height: 66vh;
 }
 
+.carousel-item {
+  position: relative; /* Agrega posicionamiento relativo */
+  z-index: 0; /* Asegura que esté detrás del nav */
+}
 .carousel-item img, .carousel-item video {
   height: 100%;
   display: flex;
