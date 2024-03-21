@@ -47,17 +47,14 @@
 
         <header id="carouselExampleCaptions" class="carousel slide carousel-pp" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item altura-79 active">
-                    <img src="../assets/img/ajedrez-5.jpg" alt="...">
-                </div>
-                <div class="carousel-item altura-79">
+                <div class="carousel-item active altura-79">
                     <img src="../assets/img/ajedrez-2.jpg" alt="...">
                 </div>
                 <div class="carousel-item altura-79">
                     <img src="../assets/img/ajedrez-3.jpg" alt="...">
                 </div>
                 <div class="carousel-item altura-79">
-                    <img src="../assets/img/ajedrez-4.jpg" alt="...">
+                    <img src="../assets/img/ajedrez-7.jpg" alt="...">
                 </div>
             </div>
         
@@ -68,11 +65,11 @@
         </header>
 
         <main class="container mt-4"> 
-            <div class="row row-tabla">
+            <div class="row link-negro row-tabla">
 
-                <div class="table-responsive col-sm-12 col-md-8 p-3 link-azul">
-                    <h1>Torneos FIDE - Argentina</h1>
-                    <table class="table table-striped">
+                <section class="col-sm-12 col-md-8"> <!-- TABLA GENERADA DESDE ARRAY -->
+                    <a class="" href="./pages/noticias.html" target=”_blank”><h3>Eventos FIDE - Argentina</h3></a>
+                    <table class="table table-responsive table-striped">
                         <caption>Haga clic en cada Torneo para ver más información</caption>
                         <thead class="table-hover">
                             <tr>
@@ -83,71 +80,76 @@
                         </thead>
                         <tbody id="calendarioDesplegable"></tbody>
                     </table>
-                </div>
+                </section>
 
-                <div class="col-sm-12 col-md-3 link-negro"> <!-- AJEDREZ AL PASO -->
-                    <div class="fondo-blanco-1">
-                        <div class="col-sm-12 columna-pint p-2 mb-3"> 
-                            <div class="embed-responsive embed-responsive-16by9" style="height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/38aW24WikUU?si=1Ppvbts8YYrG69Tn" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                            </div>
-                            <div class="pt-2 pb-2">
-                                <a href="./pages/articulo-template.html"><h4>"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h4></a>
-                                <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
-                            </div>
-                        </div>
-    
-                        <div class="col-sm-12 columna-pint p-2 mb-3"> 
-                            <div class="embed-responsive embed-responsive-16by9" style="height: 0; padding-bottom: 56.25%; position: relative; overflow: hidden;">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/38aW24WikUU?si=1Ppvbts8YYrG69Tn" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                            </div>
-                            <div class="pt-2 pb-2">
-                                <a href="./pages/articulo-template.html"><h4>"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h4></a>
-                                <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
+                <section class="col-sm-12 col-md-4"> <!-- ASIDE -->
+
+                    <a class="" href="./pages/noticias.html" target=”_blank”><h4>Eventos destacados</h4></a>
+
+                    <div class="py-1"> <!-- ARTICULO -->
+                        <div class="card">
+                            <a href="./pages/articulo-template.html">
+                                <img src="../assets/img/abierto-md1.webp" alt="Imagen ilustrativa del articulo" class="card-img-top">
+                            </a>
+                            <div class="card-body">
+                                <a href="./pages/articulo-template.html"><h5 class="card-title">53° Abierto Internacional Ciudad de Mar del Plata</h5></a>
+                                <p>Del 23 al 20 de Marzo, Mar del Plata</p>
                             </div>
                         </div>
-    
                     </div>
-    
-                </div>
+
+                </section>
 
             </div>
             
         </main>
 
-        <article class="container link-negro mt-4" data-aos="fade-up" data-aos-delay=»50″> <!-- FOOTER - ARTICULOS RECOMENDADOS -->
+        <article class="container link-negro mt-4" data-aos="fade-up" data-aos-delay=»50″> <!-- DESTACADO -->
 
             <div class="row">
 
-                <div class="col-sm-12 col-md-4"> <!-- ARTICULO -->
+                <a href="./pages/noticias.html" target=”_blank”><h4>Destacado</h4></a>
+
+                <div class="col-md-3"> <!-- ARTICULO -->
                     <div class="card">
                         <a href="./pages/articulo-template.html">
                             <img src="../assets/img/ajedrez-7.jpg" alt="Imagen ilustrativa del articulo" class="card-img-top">
                         </a>
                         <div class="card-body">
-                            <a href="./pages/articulo-template.html"><h4 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h4></a>
+                            <a href="./pages/articulo-template.html"><h5 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h5></a>
                             <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4"> <!-- ARTICULO -->
-                    <div class="card">
-                        <a href="../pages/articulo-template.html">
-                            <img src="../assets/img/ajedrez-7.jpg" alt="Imagen ilustrativa del articulo" class="card-img-top">
-                        </a>
-                        <div class="card-body">
-                            <a href="./pages/articulo-template.html"><h4 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h4></a>
-                            <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4"> <!-- ARTICULO -->
+                <div class="col-md-3 ocultar"> <!-- ARTICULO -->
                     <div class="card">
                         <a href="./pages/articulo-template.html">
                             <img src="../assets/img/ajedrez-7.jpg" alt="Imagen ilustrativa del articulo" class="card-img-top">
                         </a>
                         <div class="card-body">
-                            <a href="./pages/articulo-template.html"><h4 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h4></a>
+                            <a href="./pages/articulo-template.html"><h5 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h5></a>
+                            <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ocultar"> <!-- ARTICULO -->
+                    <div class="card">
+                        <a href="./pages/articulo-template.html">
+                            <img src="../assets/img/ajedrez-7.jpg" alt="Imagen ilustrativa del articulo" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <a href="./pages/articulo-template.html"><h5 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h5></a>
+                            <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ocultar"> <!-- ARTICULO -->
+                    <div class="card">
+                        <a href="./pages/articulo-template.html">
+                            <img src="../assets/img/ajedrez-7.jpg" alt="Imagen ilustrativa del articulo" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <a href="./pages/articulo-template.html"><h5 class="card-title">"Ábrete sésamo": el ingreso a la cuarta revolución industrial</h5></a>
                             <p>Gastón Figueras - Lic. en Ciencias Políticas y Relaciones Internacionales</p>
                         </div>
                     </div>
