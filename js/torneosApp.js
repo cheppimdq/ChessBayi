@@ -1,86 +1,106 @@
-// Esta función toma los datos del array de torneos y los inserta en la tabla HTML
-function llenarTablaTorneos() {
-    // Obtener la referencia al tbody de la tabla en HTML
-    const tbody = document.getElementById('calendarioDesplegable');
-  
-    // Iterar sobre cada torneo en el array
-    torneos.forEach((torneo, indice) => {
-      // Crear una nueva fila para el torneo
-      const fila = document.createElement('tr');
-      fila.classList.add('fila-clickeable');
-      fila.dataset.bsToggle = 'collapse';
-      fila.dataset.bsTarget = `#collapse${indice + 1}`;
-      fila.setAttribute('aria-expanded', 'false');
-      fila.setAttribute('aria-controls', `collapse${indice + 1}`);
-  
-      // Insertar las celdas con los datos del torneo
-      fila.innerHTML = `
-        <td>${torneo.fecha}</td>
-        <td>${torneo.nombre}</td>
-        <td>${torneo.lugar}</td>
-      `;
-  
-      // Agregar la fila al tbody
-      tbody.appendChild(fila);
-  
-      // Crear la fila colapsable para la información detallada del torneo
-      const filaDetallada = document.createElement('tr');
-      filaDetallada.id = `collapse${indice + 1}`;
-      filaDetallada.classList.add('collapse');
-      filaDetallada.innerHTML = `
-        <td colspan="3">
-          <div class="card-body">
-            <div class="depegable-tabla row">
-              <div class="col-md-8 p-3">
-                <p>Detalles del Torneo</p>
-                <table class="table table-sm">
-                  <tbody>
-                    ${crearFilasInformacion(torneo.informacion)}
-                  </tbody>
-                </table>
-              </div>
-              <div class="col-md-4 p-3">
-                <p>Tabla de Horarios</p>
-                <table class="table table-sm">
-                  <thead>
-                    <tr>
-                      <th>Ronda</th>
-                      <th>Fecha</th>
-                      <th>Hora</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${crearFilasHorarios(torneo.horarios)}
-                  </tbody>
-                </table>
-              </div>
+// Función para crear la tabla completa con el estilo deseado y comportamiento colapsable
+function crearTablaCompleta(eventosFide) {
+  // Obtener el elemento donde se insertará la tabla
+  const contenedorTabla = document.getElementById('eventos-tabla-colapsable');
+
+  // Crear la tabla principal
+  const tablaPrincipal = document.createElement('table');
+  tablaPrincipal.classList.add('table', 'table-bordered', 'table-hover');
+
+  // Crear el encabezado de la tabla principal
+  const encabezadoPrincipal = tablaPrincipal.createTHead();
+  const filaEncabezado = encabezadoPrincipal.insertRow();
+  filaEncabezado.innerHTML = `
+    <th>Fecha</th>
+    <th>Evento</th>
+    <th>Sede</th>
+  `;
+
+  // Crear el cuerpo de la tabla principal
+  const cuerpoPrincipal = tablaPrincipal.createTBody();
+
+  // Iterar sobre los eventosFide para crear las filas de la tabla principal
+  eventosFide.forEach((evento, indice) => {
+    const filaEvento = cuerpoPrincipal.insertRow();
+    filaEvento.classList.add('fila-clickeable');
+    filaEvento.dataset.bsToggle = 'collapse';
+    filaEvento.dataset.bsTarget = `#collapseEvento${indice + 1}`;
+    filaEvento.setAttribute('aria-expanded', 'false');
+    filaEvento.setAttribute('aria-controls', `collapseEvento${indice + 1}`);
+    filaEvento.innerHTML = `
+      <td>${evento.detalles_evento.find(item => item.fecha_publicacion)?.fecha_publicacion}</td>
+      <td>${evento.detalles_evento.find(item => item.nombre)?.nombre}</td>
+      <td>${evento.detalles_evento.find(item => item.ciudad_sede)?.ciudad_sede}</td>
+    `;
+
+    // Crear la fila colapsable para la información detallada del evento
+    const filaDetallada = document.createElement('tr');
+    filaDetallada.classList.add('collapse');
+    filaDetallada.id = `collapseEvento${indice + 1}`;
+    filaDetallada.innerHTML = `
+      <td colspan="3">
+        <div class="card-body">
+          <div class="desplegable-tabla row">
+            <div class="col-md-8 p-3">
+              <p>Detalles del Torneo</p>
+              <table class="table table-sm">
+                <tbody>
+                  ${crearFilasInformacion(evento.detalles_evento)}
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-4 p-3">
+              <p>Tabla de Horarios</p>
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Ronda</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${crearFilasHorarios(evento.rondas)}
+                </tbody>
+              </table>
             </div>
           </div>
-        </td>
-      `;
-  
-      // Agregar la fila colapsable al tbody
-      tbody.appendChild(filaDetallada);
-    });
+        </div>
+      </td>
+    `;
+
+    // Agregar las filas al cuerpo principal
+    cuerpoPrincipal.appendChild(filaEvento);
+    cuerpoPrincipal.appendChild(filaDetallada);
+  });
+
+  // Limpiar el contenedor antes de insertar la tabla
+  contenedorTabla.innerHTML = '';
+
+  // Agregar la tabla principal al contenedor
+  contenedorTabla.appendChild(tablaPrincipal);
 }
 
-// Función para crear las filas de información detallada del torneo
-function crearFilasInformacion(informacion) {
-    let filas = '';
-    for (const [clave, valor] of Object.entries(informacion)) {
-      filas += `<tr><th>${clave}</th><td>${valor}</td></tr>`;
-    }
-    return filas;
+// Función para crear las filas de información detallada del evento
+function crearFilasInformacion(detallesEvento) {
+  let filas = '';
+  detallesEvento.forEach(detalle => {
+    const clave = Object.keys(detalle)[0];
+    const valor = Object.values(detalle)[0];
+    filas += `<tr><th>${clave.replace(/_/g, ' ')}</th><td>${valor}</td></tr>`;
+  });
+  return filas;
 }
 
-// Función para crear las filas de horarios del torneo
-function crearFilasHorarios(horarios) {
-    let filas = '';
-    horarios.forEach(horario => {
-      filas += `<tr><td>${horario.ronda}</td><td>${horario.fecha}</td><td>${horario.hora}</td></tr>`;
-    });
-    return filas;
+// Función para crear las filas de horarios del evento
+function crearFilasHorarios(rondas) {
+  let filas = '';
+  rondas.forEach(ronda => {
+    filas += `<tr><td>${ronda.numero}</td><td>${ronda.fecha}</td><td>${ronda.hora}</td></tr>`;
+  });
+  return filas;
 }
 
-// Llamar a la función para llenar la tabla de torneos al cargar la página
-  llenarTablaTorneos();
+// Llamar a la función para crear la tabla completa al cargar la página
+crearTablaCompleta(eventosFide);
+
